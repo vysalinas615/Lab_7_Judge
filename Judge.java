@@ -64,70 +64,9 @@ public class Judge
 			}
 		}
 		
-		//************************************************************************************************************
-
-		/*boolean[][] visited = new boolean[N][N]; 
-
-		if (N==1)
-		{
-			//if there's only one person they must be the judge since numbers can't be repeated/ the judge trusts no one 
-			return N;
-		}
-
-		if (N<1 || N>1000)
-		{
-			System.out.println("Incorrect number of N people entered. Please enter a number between 1 and 1000. ");
-		}
-
-		//see if a is == to b and print error message since we can't have duplicates of the same number
-
-		for (int h=0; h!=trust.length; h++)
-		{
-			visited[trust[h][0]-1][trust[h][1]-1] = true;
-		}
-
-		for (int i=0; i!=trust[0].length; i++)
-		{
-			int count = 0;
-			for (int j=0; j<visited.length; j++)
-			{
-				count = visited[j][i] ? count+1 : count;*/
-				/*count = visited[j][i];
-				//count is an int and visited[][] is a boolean
-				if(visited[j][i] == true)
-				{
-					count ++;
-				}
-
-				else 
-				{
-					System.out.println();
-				}*/
-			/*}
-			if (count == N-1)
-			{
-				boolean get = true;
-
-				for (int k=0; k!=visited.length; k++)
-				{
-					if (visited[i][k])
-					{
-						get = false;
-						break;
-					}
-				}
-				if (get)
-				{
-					return i+1;
-				}
-			}
-			
-		}*/
 		//maybe make a tree with the judge as the parent or use an adjacency matrix or something
 		
 		return -1;
-		//if no judge has been found return -1
-		//***********************************************************************************************
 	}
 
 	public static void main(String[] args)
